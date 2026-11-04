@@ -1,0 +1,26 @@
+[
+    {
+        "term_id": 1,
+        "term_name": "Fall 2026",
+        "start_date": "2026-08-01T00:00:00.000",
+        "end_date": "2026-12-31T00:00:00.000"
+    },
+    {
+        "term_id": 2,
+        "term_name": "Spring 2027",
+        "start_date": "2027-01-01T00:00:00.000",
+        "end_date": "2027-05-31T00:00:00.000"
+    },
+    {
+        "term_id": 3,
+        "term_name": "Summer 2027",
+        "start_date": "2027-06-01T00:00:00.000",
+        "end_date": "2027-07-31T00:00:00.000"
+    },
+    {
+        "term_id": 8,
+        "term_name": "Spring 2026",
+        "start_date": "2026-01-01T00:00:00.000",
+        "end_date": "2026-05-31T00:00:00.000"
+    }
+]

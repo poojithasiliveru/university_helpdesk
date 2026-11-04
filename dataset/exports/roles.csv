@@ -1,0 +1,9 @@
+role_id,role_name,description
+1,Student,University student
+2,Instructor,Teaching faculty
+3,Academic Admin,Academic administrator
+4,Support Staff,Helpdesk support employee
+5,Platform Admin,System administrator
+36,Learner,Student requesting academic support
+37,Academic Administrator,Manages academic policies
+38,Platform Administrator,Manages the platform

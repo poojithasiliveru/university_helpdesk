@@ -1,0 +1,100 @@
+
+POST http://127.0.0.1:5000/api/tickets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+Content-Type: application/json
+
+{
+    "subject": "Unable to register for courses",
+    "description": "I am unable to register for my semester courses. Please help me.",
+    "category_id": 2,
+    "priority": "High"
+}
+
+###
+
+GET http://127.0.0.1:5000/api/tickets/my
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+
+###
+
+GET http://127.0.0.1:5000/api/policies/search?q=scholarship
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+
+###
+
+GET http://127.0.0.1:5000/api/tickets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+
+###
+
+
+PATCH http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/status
+Authorization: Bearer SUPPORT_STAFF_TOKEN
+Content-Type: application/json
+
+{
+    "status": "In Progress"
+}
+
+###
+
+POST http://127.0.0.1:5000/api/messages/TKT-2026-918AB9D8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+Content-Type: application/json
+
+{
+    "message_text": "Your registration issue is under review. We will update you shortly."
+}
+
+###
+
+GET http://127.0.0.1:5000/api/messages/TKT-2026-918AB9D8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+
+###
+
+PATCH http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+Content-Type: application/json
+
+{
+    "status": "In Progress"
+}
+
+###
+
+GET http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+###
+
+PATCH http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+Content-Type: application/json
+
+{
+    "status": "Waiting"
+}
+
+###
+
+GET http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+
+###
+
+POST http://127.0.0.1:5000/api/tickets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+Content-Type: application/json
+
+{
+    "subject": "Testing automatic assignment and SLA",
+    "description": "Please verify automatic assignment and SLA creation.",
+    "category_id": 2,
+    "priority": "High"
+}

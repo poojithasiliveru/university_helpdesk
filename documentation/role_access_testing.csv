@@ -1,0 +1,9 @@
+Role,API Endpoint,Expected Status,Actual Status,Result,Notes
+Student,/api/student/dashboard,200,,,Test with Student token
+Instructor,/api/instructor/dashboard,200,,,Test with Instructor token
+Support Staff,/api/support/dashboard,200,,,Test with Support Staff token
+Academic Admin,/api/academic-admin/dashboard,200,,,Test with Academic Admin token
+Platform Admin,/api/platform-admin/dashboard,200,,,Test with Platform Admin token
+Student,/api/support/dashboard,403,,,Verify role restriction
+Student,/api/profile,200,,,Test with valid Student token
+No token,/api/profile,401,,,Test without Authorization header

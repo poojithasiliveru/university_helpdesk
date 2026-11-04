@@ -1,0 +1,42 @@
+[
+    {
+        "role_id": 1,
+        "role_name": "Student",
+        "description": "University student"
+    },
+    {
+        "role_id": 2,
+        "role_name": "Instructor",
+        "description": "Teaching faculty"
+    },
+    {
+        "role_id": 3,
+        "role_name": "Academic Admin",
+        "description": "Academic administrator"
+    },
+    {
+        "role_id": 4,
+        "role_name": "Support Staff",
+        "description": "Helpdesk support employee"
+    },
+    {
+        "role_id": 5,
+        "role_name": "Platform Admin",
+        "description": "System administrator"
+    },
+    {
+        "role_id": 36,
+        "role_name": "Learner",
+        "description": "Student requesting academic support"
+    },
+    {
+        "role_id": 37,
+        "role_name": "Academic Administrator",
+        "description": "Manages academic policies"
+    },
+    {
+        "role_id": 38,
+        "role_name": "Platform Administrator",
+        "description": "Manages the platform"
+    }
+]

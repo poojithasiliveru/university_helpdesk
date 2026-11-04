@@ -1,0 +1,63 @@
+
+POST http://127.0.0.1:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Test Student",
+    "email": "teststudent@gmail.com",
+    "password": "Student@123",
+    "role_id": 1
+}
+
+
+###
+
+POST http://127.0.0.1:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "teststudent@gmail.com",
+    "password": "Student@123"
+}
+
+###
+
+GET http://127.0.0.1:5000/api/student/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+
+###
+
+GET http://127.0.0.1:5000/api/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMSwicm9sZSI6IlN0dWRlbnQiLCJleHAiOjE3OTM4MDcyNDd9.KZln9XBSy7yU0GI97uJLE574w0L1AuJHH4Zgyccp1TM
+
+###
+
+POST http://127.0.0.1:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Test Support",
+    "email": "support@gmail.com",
+    "password": "Support@123",
+    "role_id": 4
+}
+
+###
+
+POST http://127.0.0.1:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "support@gmail.com",
+    "password": "Support@123"
+}
+
+###
+
+PATCH http://127.0.0.1:5000/api/tickets/TKT-2026-918AB9D8/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0ZXJfaWQiOjUwMiwicm9sZSI6IlN1cHBvcnQgU3RhZmYiLCJleHAiOjE3OTM4MDkyODV9.mPP87_mf-Po9DKHAUyS7hEvL0alOIKkmXdamkkOIXaE
+Content-Type: application/json
+
+{
+    "status": "In Progress"
+}

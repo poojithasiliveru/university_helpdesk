@@ -1,0 +1,26 @@
+[
+    {
+        "category_id": 1,
+        "category_name": "Financial Aid",
+        "authorized_team": "Financial Aid Office",
+        "description": "Scholarships, fees and financial assistance"
+    },
+    {
+        "category_id": 2,
+        "category_name": "Registration",
+        "authorized_team": "Registrar Office",
+        "description": "Course and semester registration"
+    },
+    {
+        "category_id": 3,
+        "category_name": "IT",
+        "authorized_team": "IT Support",
+        "description": "Technical and account-related support"
+    },
+    {
+        "category_id": 4,
+        "category_name": "Accessibility",
+        "authorized_team": "Accessibility Services",
+        "description": "Accessibility and accommodation support"
+    }
+]

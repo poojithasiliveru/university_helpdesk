@@ -1,0 +1,6 @@
+anomaly_id,ticket_id,anomaly_type,description,source_table,created_at
+1,TKT-2026-000007,Expired Policy Citation,Message cites expired article KB-000002,messages,2026-11-03 22:24:32
+2,TKT-2026-000004,Unauthorized Team Routing,Assigned to Unauthorized-Financial Aid Office; authorized team is Financial Aid Office,assignments,2026-11-03 22:24:32
+3,TKT-2026-000001,Unsupported Response Claim,Support message makes an unsupported guarantee,messages,2026-11-03 22:24:32
+4,TKT-2026-000001,Business-Hours SLA Error,Response deadline deliberately shifted by one day,sla,2026-11-03 22:24:32
+5,TKT-2026-000009,Missing Escalation,Ticket is Escalated but has no escalation event,ticket_events,2026-11-03 22:24:32

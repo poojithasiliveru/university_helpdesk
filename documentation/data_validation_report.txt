@@ -1,0 +1,76 @@
+UNIVERSITY HELPDESK AND POLICY ASSISTANT
+DATA VALIDATION REPORT
+
+Purpose
+-------
+Record database row-count checks, anomaly-label checks, and final dataset validation.
+
+Generation seed
+---------------
+Intended seed: 20261022.
+Confirm the seed in the generator configuration before final submission.
+
+Dataset targets
+---------------
+Tickets: 5,000
+Messages: 20,000
+Knowledge articles: 200
+Policy documents: 40
+Requesters: 500
+Anomaly categories: 5
+
+Count note
+----------
+Earlier project checks showed 5,001 tickets and 20,003 messages because manual API test records were added in addition to generated records. Re-run the queries below and enter current final counts. Do not delete test records without first identifying them.
+
+Final counts (fill using current database results)
+--------------------------------------------------
+Tickets: __________________
+Messages: __________________
+Knowledge articles: __________________
+Policy documents: __________________
+Requesters: __________________
+Assignments: __________________
+SLA records: __________________
+Ticket events: __________________
+Anomaly labels: __________________
+Ground-truth records: __________________
+
+Anomaly validation observed during project work
+------------------------------------------------
+The screenshots showed five rows in anomaly_labels and five rows in ground_truth. Each category had one record:
+- Expired Policy Citation: 1
+- Unauthorized Team Routing: 1
+- Unsupported Response Claim: 1
+- Business-Hours SLA Error: 1
+- Missing Escalation: 1
+
+The five labelled ticket IDs were checked against the tickets table and found to exist.
+
+SQL validation queries
+----------------------
+SELECT COUNT(*) FROM tickets;
+SELECT COUNT(*) FROM messages;
+SELECT COUNT(*) FROM knowledge_articles;
+SELECT COUNT(*) FROM policy_documents;
+SELECT COUNT(*) FROM requesters;
+SELECT COUNT(*) FROM assignments;
+SELECT COUNT(*) FROM sla;
+SELECT COUNT(*) FROM ticket_events;
+SELECT COUNT(*) FROM anomaly_labels;
+SELECT COUNT(*) FROM ground_truth;
+
+SELECT anomaly_type, COUNT(*) FROM anomaly_labels GROUP BY anomaly_type;
+SELECT anomaly_type, COUNT(*) FROM ground_truth GROUP BY anomaly_type;
+
+Final checklist
+---------------
+[ ] Re-run and record all final row counts.
+[ ] Distinguish generated records from manual API test records.
+[ ] Confirm CSV/JSON exports are current.
+[ ] Confirm SQL backup restores successfully.
+[ ] Verify foreign keys and required fields.
+[ ] Verify policy effective-date filtering.
+[ ] Verify SLA calculations against the defined business-hours calendar.
+[ ] Complete role-based API testing and enter actual HTTP results in role_access_testing.csv.
+[ ] Generate and record checksums for final deliverables.
